@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 Route::get('manage-vue', 'VueItemController@manageVue');
 Route::resource('vueitems','VueItemController');
+Route::post('formSubmit','ImageController@formSubmit');
 Route::get('generate-pdf','PDFController@generatePDF');
